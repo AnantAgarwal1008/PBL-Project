@@ -45,11 +45,7 @@ export default async function StockDetails({ params }: StockDetailsPageProps) {
             <WatchlistButton symbol={symbol.toUpperCase()} company={symbol.toUpperCase()} isInWatchlist={false} />
           </div>
 
-          <TradingViewWidget
-            scriptUrl={`${scriptUrl}technical-analysis.js`}
-            config={TECHNICAL_ANALYSIS_WIDGET_CONFIG(symbol)}
-            height={400}
-          />
+          
 
           <TradingViewWidget
             scriptUrl={`${scriptUrl}company-profile.js`}
